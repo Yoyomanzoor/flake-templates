@@ -5,17 +5,17 @@
 To initialize (where `${ENV}` is listed in the table below):
 
 ```shell
-nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#${ENV}"
+nix flake init --template "https://flakehub.com/f/Yoyomanzoor/flake-templates/*#${ENV}"
 ```
 
 Here's an example (for the [`rust`](./rust) template):
 
 ```shell
 # Initialize in the current project
-nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#rust"
+nix flake init --template "https://flakehub.com/f/Yoyomanzoor/flake-templates/*#rust"
 
 # Create a new project
-nix flake new --template "https://flakehub.com/f/the-nix-way/dev-templates/*#rust" ${NEW_PROJECT_DIRECTORY}
+nix flake new --template "https://flakehub.com/f/Yoyomanzoor/flake-templates/*#rust" ${NEW_PROJECT_DIRECTORY}
 ```
 
 ## How to use the templates
@@ -45,6 +45,7 @@ Once your preferred template has been initialized, you can use the provided shel
 | [Haxe]                           | [`haxe`](./haxe/)                     |
 | [Java]                           | [`java`](./java/)                     |
 | [Jupyter]                        | [`jupyter`](./jupyter/)               |
+|  [JupyterLab]                    | [`jupyterlab`](./jupyterlab)       |
 | [Kotlin]                         | [`kotlin`](./kotlin/)                 |
 | [LaTeX]                          | [`latex`](./latex/)                   |
 | [Nickel]                         | [`nickel`](./nickel/)                 |
@@ -176,6 +177,10 @@ A dev template that's fully customizable.
 - [jdtls] 1.31.0
 
 ### [`jupyter`](./jupyter/)
+
+- [Jupyter core][jupyter] 5.7.2
+
+### [`jupyterlab`](./jupyterlab/)
 
 - [Jupyter core][jupyter] 5.7.2
 
